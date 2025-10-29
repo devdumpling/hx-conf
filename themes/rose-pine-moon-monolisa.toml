@@ -1,0 +1,58 @@
+# Helix theme: Rose Pine Moon with MonoLisa
+# Extends rose_pine_moon with:
+# - Different cursor colors for insert/normal/select modes
+# - TODO/NOTE/FIXME highlighting
+# - Minimal italic usage (optional)
+
+inherits = "rose_pine_moon"
+
+# Cursor colors for different modes
+"ui.cursor.normal" = { bg = "iris", fg = "base" }
+"ui.cursor.insert" = { bg = "foam", fg = "base" }
+"ui.cursor.select" = { bg = "rose", fg = "base" }
+"ui.cursor.primary.normal" = { bg = "iris", fg = "base" }
+"ui.cursor.primary.insert" = { bg = "foam", fg = "base" }
+"ui.cursor.primary.select" = { bg = "rose", fg = "base" }
+
+# TODO/NOTE/FIXME highlighting
+# Make these stand out with bold and distinct background colors
+"text.todo" = { fg = "base", bg = "foam", modifiers = ["bold"] }
+"text.note" = { fg = "base", bg = "iris", modifiers = ["bold"] }
+"text.fixme" = { fg = "base", bg = "love", modifiers = ["bold"] }
+"text.warning" = { fg = "base", bg = "gold", modifiers = ["bold"] }
+
+# Also style as warnings to catch them in different contexts
+"warning" = { fg = "gold", modifiers = ["bold"] }
+
+# LSP diagnostics styling
+"diagnostic.info" = { underline = { color = "foam", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "iris", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "gold", style = "curl" } }
+
+# Optional: Add subtle italic for comments (using MonoLisa's beautiful italics)
+# Uncomment these if you enable MonoLisa Script for italic in Ghostty
+# "comment" = { modifiers = ["italic"] }
+# "comment.line" = { modifiers = ["italic"] }
+# "comment.block" = { modifiers = ["italic"] }
+
+# Optional: Italic for types (elegant with MonoLisa)
+# "type" = { modifiers = ["italic"] }
+# "variable.parameter" = { modifiers = ["italic"] }
+
+# Rose Pine Moon palette (for reference)
+[palette]
+base = "#232136"
+surface = "#2a273f"
+overlay = "#393552"
+muted = "#6e6a86"
+subtle = "#908caa"
+text = "#e0def4"
+love = "#eb6f92"
+gold = "#f6c177"
+rose = "#ea9a97"
+pine = "#3e8fb0"
+foam = "#9ccfd8"
+iris = "#c4a7e7"
+highlight-low = "#2a283e"
+highlight-med = "#44415a"
+highlight-high = "#56526e"
