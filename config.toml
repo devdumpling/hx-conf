@@ -1,6 +1,9 @@
 # Theming / Appearance
 theme = "rose-pine-moon-monaspace"
 
+[editor]
+shell = ["zsh", "-c"]
+
 ###
 #### Config
 ### 
