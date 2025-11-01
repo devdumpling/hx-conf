@@ -1,0 +1,12 @@
+# Tokyo Night Moon theme with mode-specific cursor colors
+# Inherits from built-in tokyonight_moon and adds cursor customization
+
+inherits = "tokyonight_moon"
+
+# Mode-specific cursor colors
+"ui.cursor.normal" = { bg = "orange", fg = "bg" }
+"ui.cursor.insert" = { bg = "green", fg = "bg" }
+"ui.cursor.select" = { bg = "magenta", fg = "bg" }
+"ui.cursor.primary.normal" = { bg = "orange", fg = "bg" }
+"ui.cursor.primary.insert" = { bg = "green", fg = "bg" }
+"ui.cursor.primary.select" = { bg = "magenta", fg = "bg" }
