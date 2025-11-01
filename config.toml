@@ -4,6 +4,9 @@ theme = "rose-pine-moon-monaspace"
 [editor]
 shell = ["zsh", "-c"]
 
+[editor.auto-save]
+focus-lost = true
+
 ###
 #### Config
 ### 
