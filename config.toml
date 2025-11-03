@@ -1,17 +1,34 @@
 # Theming / Appearance
-theme = "tokyonight"
+theme = "kanagawa"
 
 # editor
 [editor]
 line-number = "relative"
 shell = ["zsh", "-c"]
+true-color = true
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
 
 [editor.auto-save]
 focus-lost = true
 
+[editor.lsp]
+
 ###
-#### Config
+#### Keymap Config
 ### 
+[keys.insert]
+Cmd-s = ":w" # unify saving
+
 [keys.insert.j]
 k = "normal_mode" # Maps `jk` to exit insert mode
+
+[keys.normal]
+Cmd-s = ":w"
+x = "select_line_below" # default
+X = "select_line_above" # more intuitive line selection
 
