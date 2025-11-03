@@ -1,7 +1,9 @@
 # Theming / Appearance
-theme = "rose-pine-moon-monaspace"
+theme = "tokyonight"
 
+# editor
 [editor]
+line-number = "relative"
 shell = ["zsh", "-c"]
 
 [editor.auto-save]
